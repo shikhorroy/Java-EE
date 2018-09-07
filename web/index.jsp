@@ -11,6 +11,9 @@
     <title>Welcome</title>
   </head>
   <body>
-    Welcome to Java Enterprise Edition Application Development.
+    <form action="/Welcome">
+        Enter username: <input type="text" name="userName"><br>
+        <input type="submit">
+    </form>
   </body>
 </html>
