@@ -11,7 +11,7 @@
     <title>Welcome</title>
   </head>
   <body>
-    <form action="/Welcome">
+    <form action="/Welcome" method="post">
         Enter username: <input type="text" name="userName"><br>
         <input type="submit">
     </form>
