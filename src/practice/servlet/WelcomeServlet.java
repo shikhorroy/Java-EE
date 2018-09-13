@@ -21,4 +21,16 @@ public class WelcomeServlet extends HttpServlet {
         writer.println("Inside WelcomeServlet doGet method...");
         writer.println("Welcome : " + request.getParameter("userName"));
     }
+
+
+    @Override
+    public void init() throws ServletException {
+        super.init();
+    }
+
+    @Override
+    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        PrintWriter writer = response.getWriter();
+        writer.println("Inside WelcomeServlet service method...");
+    }
 }
